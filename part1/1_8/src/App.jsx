@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const Display = props => (
   <div>{props.text} {props.value}</div>
@@ -11,10 +11,10 @@ const Button = (props) => (
 )
 
 const Statistics = (props) => {
-  const { good, neutral, bad } = props;
-  const all = good + neutral + bad;
-  const average = (good - bad) / all;
-  const positive = (good / all) * 100;
+  const { good, neutral, bad } = props
+  const all = good + neutral + bad
+  const average = (good - bad) / all
+  const positive = (good / all) * 100
 
   return (
     <div>
@@ -26,8 +26,8 @@ const Statistics = (props) => {
       <Display text="average" value={average} />
       <Display text="positive" value={positive + " %"} />
     </div>
-  );
-};
+  )
+}
 
 
 const App = () => {
